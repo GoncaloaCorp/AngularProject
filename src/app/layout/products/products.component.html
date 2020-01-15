@@ -1,1 +1,4 @@
 <p>products works!</p>
+<p *ngFor="let product of products$ | async">{{product.id}} , {{product.pvp}}</p>
+<br>
+<button (click)="create()">CREATE DATA</button>
